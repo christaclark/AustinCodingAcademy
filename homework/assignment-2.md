@@ -7,6 +7,8 @@ Conceptual
 1) Provide 3 real-world examples of programs that need to read in
 the contents of a file as opposed to asking the user directly for input.
 
+Google, Facebook, and Youtube all use Python, they need to read information to manage traffic/ run websites. Users can’t input everything!
+
 2) You are designing the next greatest PC game, HarmVille. HarmVille
 is like FarmVille, but with a Grand Theft Auto twist. When a user installs
 the game, they are given a choice of what directory they would like to
