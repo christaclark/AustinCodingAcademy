@@ -210,6 +210,21 @@ zig-zag pattern. For example, for a file that begins like
 	    def get_routes(self, viewset):
 		...
 		...
+	
+	
+def zigzag(txt):
+	# 1. Take out all the white space in the string
+	txt = txt.replace(' ','').replace('\n','').replace('\t','')
+	# 2. print in a zigzag pattern:
+		# go in a loop 
+		# keep track of where we are in the zigzag
+		# keep track of direction, switch when we get to the end
+	xpos = 0
+	for ch in txt:
+		for ch in txt:
+		print ' '*xpos + ch
+		
+	# 3. load data from a file and zigzag
 		
 The output should resemble
 
