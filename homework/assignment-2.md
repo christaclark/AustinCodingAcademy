@@ -182,6 +182,26 @@ Programs
 they type in a phrase of your choice. Calculate and print the mean, median, and
 mode of the numbers provided.
 	
+	
+	import inspect
+class DynamicRouter(routers.DefaultRouter):
+   def get_routes(self, viewset):
+    
+    
+print "Enter tons of numbers until you're sick of it then type 'stop'."
+while True: 
+    user_input =  raw_input('Enter a number or "stop": ')
+    if user_input.lower() == 'stop':
+    	print "Okay, okay!"
+    	break
+    numbers.append(float(user_input))
+    	
+print "Just to make sure, were those numbers", numbers, "?" 	
+	
+	
+	
+	
+	
 2) Create a program which prints each non-whitespace character of a file in a
 zig-zag pattern. For example, for a file that begins like
 
