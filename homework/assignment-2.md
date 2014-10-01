@@ -411,6 +411,11 @@ City and State the computer is (estimated) to be in, along with the current
 weather info.
 
 
+#NOTES ON JSON:
+
+you can import json into python program in the terminal
+you can do: json.dumps to export data
+you can do: json.load to import data
 
 - - - - - - - - - - - - ANSWER! - - - - - - - - - - - - 
 
