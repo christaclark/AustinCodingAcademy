@@ -182,7 +182,8 @@ Programs
 they type in a phrase of your choice. Calculate and print the mean, median, and
 mode of the numbers provided.
 	
-	
+- - - - - - - - - - - - ANSWER! - - - - - - - - - - - - 
+
 	import inspect
 class DynamicRouter(routers.DefaultRouter):
    def get_routes(self, viewset):
@@ -320,9 +321,25 @@ def get_data(filename):
 
 
 # 4. the program should reprint 
+def analyze_data(data) #input raw from the file 
+	lines = data.split('\n')
+	test_scores = lines[4::3]
+	#the scores are strings, gotta convert to integers:
+-->	test_scores = [int(x) for x in test_scores] 
+	avg_score = 1.0 * sum(test_scores) / len(test_scores)
+	print 'Average test score =', avg_score
+	
+	data = get_data('http://pastbin.com/testscores..')
+	analyze_data(data)
+	OR 
+	
+-->	num_list = []	
+	for i in scores:
+		convert_num = int(i)
+		num_list.append(convert_num)
+		print num_list
 
-txt = 'http://thisisnotreal.com'
-url_prefix
+
 
 	
 Create a program that will prompt the user to enter the path of the results
