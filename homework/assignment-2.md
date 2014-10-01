@@ -316,7 +316,8 @@ def get_data(filename):
 	else
 		with open(filename) as f:
 			txt = f.read()
-		return txt
+		return txt.replace('/r','') #normaize
+
 
 # 4. the program should reprint 
 
