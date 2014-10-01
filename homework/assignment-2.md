@@ -366,12 +366,19 @@ The user should be given the option to save this information to a local file.
 		data = json.load(resp)   
 		return data
 
+#Using their API you can read the data, choose data I want, and display it on my website..etc
+#API = application programming interface: 
+	# a way to ask for certain information from a website to then use in my personal program (other website gives 	me information in a machine readable format, it's for machines to read not humans)
+	
 	def get_weather_info(latiude, longitude):
 		base_url = "https://api.forecast.io/forecast"
 		API_KEY = "cc849413324b099ad551c0a3dd9b0d32"
 		url = "%s/%s/%s,%s" % (base_url, API_KEY, latiude, longitude)
 		resp = urllib2.urlopen(url)
-		data = json.load(resp)
+		
+		#this command takes the json api data and puts it in a dictionary that python can read		
+		data = json.load(resp) 
+		
 		currently = data['currently']
 		return "%sF: %s" % (int(currently['temperature']), currently['summary'])
 
@@ -402,3 +409,9 @@ is an example return value from the function:
 Use these functions to write a program which prints the name of the
 City and State the computer is (estimated) to be in, along with the current
 weather info.
+
+
+
+- - - - - - - - - - - - ANSWER! - - - - - - - - - - - - 
+
+
