@@ -211,7 +211,9 @@ zig-zag pattern. For example, for a file that begins like
 		...
 		...
 	
-	
+- - - - - - - - - - - - ANSWER! - - - - - - - - - - - - 
+
+
 def zigzag(txt):
 	# 1. Take out all the white space in the string
 	txt = txt.replace(' ','').replace('\n','').replace('\t','')
@@ -296,6 +298,31 @@ For example,
 	Lee Harrison
 	0053429989
 	98
+	
+	
+- - - - - - - - - - - - ANSWER! - - - - - - - - - - - - 
+
+import urllib2
+
+# 1. Check if it's a file or URL 
+de is_url(txt);
+	return txt.startswith(http://')
+	
+# 2. if URL, read from web url 
+# 3. otherwise, read the data from a file
+def get_data(filename):
+	if is_url(filename):
+		urllib2.urlopen(filename).read()
+	else
+		with open(filename) as f:
+			txt = f.read()
+		return txt
+
+# 4. the program should reprint 
+
+txt = 'http://thisisnotreal.com'
+url_prefix
+
 	
 Create a program that will prompt the user to enter the path of the results
 file. If the path begins with "http://", then the program should assume the
